@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+
+    <!-- vue.js  -->
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+
+    <!-- font-awesome  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+
+    <!-- CSS  -->
+    <link rel="stylesheet" href="dist/app.css">
+
+    <!-- FONT  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div id="root">
+        <!-- HEADER  -->
+        <!-- <header>
+            <div class="container">
+                <div class="header-inner">
+                    <div class="left">
+                        <a href="" class="red-txt">DA</a>
+                    </div>
+
+                    <nav class="right">
+                        <ul class="nav-list">
+                            <li><a href="">Who</a></li>
+                            <li><a href="#portfolio">Portfolio</a></li>
+                            <li><a href="#contacts">Contacts</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header> -->
+        <!-- END HEADER  -->
+
+        <!-- MAIN  -->
+        <main>
+            
+            <div class="container">
+                
+                <!-- TITLE  -->
+                <section id="title">
+                    
+                    <div class="title-section-inner">
+                        
+                        <div class="title-container">
+                            <h1 id="hello" class="white-txt"></h1>
+                            <h2 id="web-developer" class="red-txt">Jr. Full Stack Web Developer</h2>
+                        </div>
+
+                    </div>
+
+                    <!-- navbar buttons  -->
+                    <nav>
+                        <a href="#portfolio">Portfolio</a>
+                        <a href="#about">About</a>
+                        <a href="#contacts">Contacts</a>
+                    </nav>
+                    <!-- end navbar buttons  -->
+
+                </section>
+                <!-- end TITLE  -->
+            </div>
+
+            <div class="border"></div>
+
+            <div class="container">
+                <!-- PORTFOLIO  -->
+                <section id="portfolio">
+                    <div class="section-title-container">
+                        <h2 class="red-txt">PORTFOLIO</h2>
+                    </div>
+                   
+
+                    <!-- Digital Ocean  -->
+                    <div class="project-container">
+                        
+                        <div class="project-title-container">
+                            <h2 class="white-txt">Digital Ocean</h2>
+                            
+                            <div class="logos-container">
+                                <ul class="logos-list">
+                                    <li><i class="fab fa-html5"></i></li>
+                                    <li><i class="fab fa-css3-alt"></i></li>
+                                    <li><i class="fab fa-bootstrap"></i></li>
+                                </ul>
+                            </div>
+                            
+                            <div class="description">
+                                <p class="white-txt">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corporis voluptates rerum soluta dolor consectetur aut voluptatum vitae voluptas reiciendis perspiciatis eius architecto dicta at vero, ipsa alias maiores quae! Dolor.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="project-image-container">
+                            <i class="fas fa-chevron-left white-txt"></i>
+                            <a :href="digitalOcean[currentActiveImage]"><img :src="digitalOcean[currentActiveImage]" alt=""></a>
+                            <i class="fas fa-chevron-right white-txt"></i>
+                        </div>
+                        
+                        
+                    </div>
+                    <!-- end Digital Ocean  -->
+
+                    <!-- boolflix  -->
+                    <div class="project-container">
+                        
+                        <div class="project-title-container">
+                            <h2 class="white-txt">Boolflix</h2>
+                            
+                            <div class="logos-container">
+                                <ul class="logos-list">
+                                    <li><i class="fab fa-html5"></i></li>
+                                    <li><i class="fab fa-css3-alt"></i></li>
+                                    <li><i class="fab fa-js"></i></li>
+                                    <li><i class="fab fa-vuejs"></i></li>
+                                </ul>
+                            </div>
+                            
+                            <div class="description">
+                                <p class="white-txt">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corporis voluptates rerum soluta dolor consectetur aut voluptatum vitae voluptas reiciendis perspiciatis eius architecto dicta at vero, ipsa alias maiores quae! Dolor.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="project-image-container">
+                            <i class="fas fa-chevron-left white-txt"></i>
+                            <a :href="boolflix[currentActiveImage]"><img :src="boolflix[currentActiveImage]" alt=""></a>
+                            <i class="fas fa-chevron-right white-txt"></i>
+                        </div>
+
+                    </div>
+                    <!-- end boolflix  -->
+
+                    <!-- SpotifyWeb  -->
+                    <div class="project-container">
+                        
+                        <div class="project-title-container">
+                            <h2 class="white-txt">SpotifyWeb</h2>
+                            
+                            <div class="logos-container">
+                                <ul class="logos-list">
+                                    <li><i class="fab fa-html5"></i></li>
+                                    <li><i class="fab fa-css3-alt"></i></li>
+                                </ul>
+                            </div>
+                            
+                            <div class="description">
+                                <p class="white-txt">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corporis voluptates rerum soluta dolor consectetur aut voluptatum vitae voluptas reiciendis perspiciatis eius architecto dicta at vero, ipsa alias maiores quae! Dolor.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="project-image-container">
+                            <i class="fas fa-chevron-left white-txt"></i>
+                            <a :href="spotifyWeb[currentActiveImage]"><img :src="spotifyWeb[currentActiveImage]" alt=""></a>
+                            <i class="fas fa-chevron-right white-txt"></i>
+                        </div>
+
+                    </div>
+                    <!-- end SpotifyWeb  -->
+
+                    <!-- Boolzapp  -->
+                    <div class="project-container">
+                        
+                        <div class="project-title-container">
+                            <h2 class="white-txt">Boolzapp</h2>
+                            
+                            <div class="logos-container">
+                                <ul class="logos-list">
+                                    <li><i class="fab fa-html5"></i></li>
+                                    <li><i class="fab fa-css3-alt"></i></li>
+                                    <li><i class="fab fa-js"></i></li>
+                                    <li><i class="fab fa-vuejs"></i></li>
+                                </ul>
+                            </div>
+                            
+                            <div class="description">
+                                <p class="white-txt">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corporis voluptates rerum soluta dolor consectetur aut voluptatum vitae voluptas reiciendis perspiciatis eius architecto dicta at vero, ipsa alias maiores quae! Dolor.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="project-image-container">
+                            <i class="fas fa-chevron-left white-txt"></i>
+                            <a :href="boolzapp[currentActiveImage]"><img :src="boolzapp[currentActiveImage]" alt=""></a>
+                            <i class="fas fa-chevron-right white-txt"></i>
+                        </div>
+
+                    </div>
+                    <!-- end Boolzapp  -->
+
+                    <!-- Phlox  -->
+                    <div class="project-container">
+                        
+                        <div class="project-title-container">
+                            <h2 class="white-txt">Phlox-theme</h2>
+                            
+                            <div class="logos-container">
+                                <ul class="logos-list">
+                                    <li><i class="fab fa-html5"></i></li>
+                                    <li><i class="fab fa-css3-alt"></i></li>
+                                    <li><i class="fab fa-sass"></i></li>
+                                    <li><i class="fab fa-vuejs"></i></li>
+                                </ul>
+                            </div>
+                            
+                            <div class="description">
+                                <p class="white-txt">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corporis voluptates rerum soluta dolor consectetur aut voluptatum vitae voluptas reiciendis perspiciatis eius architecto dicta at vero, ipsa alias maiores quae! Dolor.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="project-image-container">
+                            <i class="fas fa-chevron-left white-txt"></i>
+                            <a :href="phlox[currentActiveImage]"><img :src="phlox[currentActiveImage]" alt=""></a>
+                            <i class="fas fa-chevron-right white-txt"></i>
+                        </div>
+
+                    </div>
+                    <!-- end Phlox  -->
+
+                    <!-- Deliveboo  -->
+                    <div class="project-container">
+                        
+                        <div class="project-title-container">
+                            <h2 class="white-txt">Deliveboo</h2>
+                            
+                            <div class="logos-container">
+                                <ul class="logos-list">
+                                    <li><i class="fab fa-html5"></i></li>
+                                    <li><i class="fab fa-css3-alt"></i></li>
+                                    <li><i class="fab fa-sass"></i></li>
+                                    <li><i class="fab fa-js"></i></li>
+                                    <li><i class="fab fa-vuejs"></i></li>
+                                    <li><i class="fab fa-php"></i></li>
+                                    <li><i class="fab fa-laravel"></i></li>
+                                    <li></li>
+                                </ul>
+                            </div>
+                            
+                            <div class="description">
+                                <p class="white-txt">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corporis voluptates rerum soluta dolor consectetur aut voluptatum vitae voluptas reiciendis perspiciatis eius architecto dicta at vero, ipsa alias maiores quae! Dolor.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="project-image-container">
+                            <i class="fas fa-chevron-left white-txt"></i>
+                            <a :href="deliveboo[currentActiveImage]"><img :src="deliveboo[currentActiveImage]" alt=""></a>
+                            <i class="fas fa-chevron-right white-txt"></i>
+                        </div>
+
+                    </div>
+                    <!-- end Deliveboo  -->
+
+                </section>
+                <!-- END PORTFOLIO  -->
+            </div>
+            
+        </main>
+        <!-- END MAIN  -->
+        <div class="border"></div>
+        <!-- FOOTER  -->
+        <footer id="contacts">
+            <div class="container">
+                
+                <div class="footer-inner">
+                    <div class="section-title-container">
+                        <h2 class="red-txt">CONTACTS</h2>
+                    </div>
+
+                    <div class="contacts-list">
+                        <div class="mail">
+                            <i class="fas fa-envelope white-txt"></i>
+                            <span class="white-txt"></span>
+                        </div>
+
+                        <div class="linkedin">
+                            
+                            <a href="https://www.linkedin.com/in/daniele-alessi-6189471b0/"><i class="fab fa-linkedin white-txt"></i></a>
+                        </div>
+                    </div>
+
+                    
+                </div>
+            </div>
+        </footer>
+        <!-- END FOOTER  -->
+    </div>
+    
+    <script src="dist/app.js"></script>
+</body>
+</html>

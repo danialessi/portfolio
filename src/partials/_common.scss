@@ -1,0 +1,37 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #000000;
+    font-family: 'IBM Plex Sans', sans-serif;
+    text-rendering: optimizeLegibility;
+}
+
+.container {
+    margin: auto;
+    width: 70%;
+    // border: 2px solid white;
+}
+
+.white-txt {
+    color: white;
+}
+
+.red-txt {
+    color: $red;
+}
+
+.section-title-container {
+    h2 {
+        text-align: center;
+    }
+}
+
+.border {
+    width: 100%;
+    height: 1px;
+    border: 1px solid grey;
+}

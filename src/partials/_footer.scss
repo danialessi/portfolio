@@ -1,0 +1,14 @@
+.footer-inner {
+    margin-top: 50px;
+    height: 100%;
+
+    .contacts-list {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        width: 50%;
+        margin: auto;
+        padding: 70px 0;
+        font-size: 30px;
+    }
+}

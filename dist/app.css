@@ -1,0 +1,136 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #000000;
+  font-family: "IBM Plex Sans", sans-serif;
+  text-rendering: optimizeLegibility;
+}
+
+.container {
+  margin: auto;
+  width: 70%;
+}
+
+.white-txt {
+  color: white;
+}
+
+.red-txt {
+  color: #d40101;
+}
+
+.section-title-container h2 {
+  text-align: center;
+}
+
+.border {
+  width: 100%;
+  height: 1px;
+  border: 1px solid grey;
+}
+
+.header-inner {
+  padding-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header-inner .left a {
+  font-weight: bold;
+  font-size: 30px;
+  text-decoration: none;
+  border-bottom: 2px solid #d40101;
+}
+.header-inner .right .nav-list li {
+  padding: 0 20px;
+  display: inline-block;
+}
+.header-inner .right .nav-list li a {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: white;
+}
+.header-inner .right .nav-list li:hover a {
+  color: #d40101;
+}
+
+#title {
+  padding: 180px 0 340px 0;
+}
+#title .title-section-inner {
+  padding-bottom: 50px;
+}
+#title .title-section-inner .title-container {
+  max-width: 75%;
+}
+#title .title-section-inner .title-container #hello {
+  font-size: 100px;
+}
+#title nav a {
+  text-transform: uppercase;
+  padding-right: 20px;
+  text-decoration: none;
+  color: white;
+}
+
+#portfolio {
+  margin-top: 100px;
+}
+#portfolio .project-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+  padding: 50px 0;
+  border-bottom: 2px solid white;
+}
+#portfolio .project-container .project-title-container {
+  width: 40%;
+}
+#portfolio .project-container .project-title-container .logos-container .logos-list {
+  margin-top: 10px;
+}
+#portfolio .project-container .project-title-container .logos-container .logos-list li {
+  display: inline-block;
+}
+#portfolio .project-container .project-title-container .logos-container .logos-list li i {
+  font-size: 20px;
+  color: white;
+}
+#portfolio .project-container .project-title-container .description {
+  margin-top: 15px;
+}
+#portfolio .project-container .project-image-container {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  width: 50%;
+  font-size: 25px;
+}
+#portfolio .project-container .project-image-container img {
+  padding: 6px;
+  border: 1px solid white;
+  border-radius: 10px;
+  width: 90%;
+}
+#portfolio div:last-child {
+  border-bottom: 0;
+}
+
+.footer-inner {
+  margin-top: 50px;
+  height: 100%;
+}
+.footer-inner .contacts-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 50%;
+  margin: auto;
+  padding: 70px 0;
+  font-size: 30px;
+}

@@ -58,8 +58,18 @@ body {
   color: #d40101;
 }
 
+.background-image {
+  width: 100%;
+  height: 550px;
+  background-image: url(../../img/code.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
 #title {
-  padding: 180px 0 340px 0;
+  position: relative;
+  bottom: 299px;
+  left: 280px;
 }
 #title .title-section-inner {
   padding-bottom: 50px;
@@ -89,7 +99,8 @@ body {
   border-bottom: 2px solid white;
 }
 #portfolio .project-container .project-title-container {
-  width: 40%;
+  width: 50%;
+  padding-right: 80px;
 }
 #portfolio .project-container .project-title-container .logos-container .logos-list {
   margin-top: 10px;
@@ -104,18 +115,11 @@ body {
 #portfolio .project-container .project-title-container .description {
   margin-top: 15px;
 }
-#portfolio .project-container .project-image-container {
-  text-align: center;
-  display: flex;
-  align-items: center;
+#portfolio .project-container .swiper-container {
   width: 50%;
-  font-size: 25px;
 }
-#portfolio .project-container .project-image-container img {
-  padding: 6px;
-  border: 1px solid white;
-  border-radius: 10px;
-  width: 90%;
+#portfolio .project-container .swiper-container .swiper-wrapper .swiper-slide img {
+  width: 100%;
 }
 #portfolio div:last-child {
   border-bottom: 0;

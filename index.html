@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
 
+    <!-- swiper  -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    
     <!-- vue.js  -->
     <script src="https://cdn.jsdelivr.net/npm/vue"></script>
 
@@ -45,6 +49,7 @@
 
         <!-- MAIN  -->
         <main>
+            <div class="background-image"></div>
             
             <div class="container">
                 
@@ -101,12 +106,33 @@
                             </div>
                         </div>
                         
-                        <div class="project-image-container">
-                            <i class="fas fa-chevron-left white-txt"></i>
-                            <a :href="digitalOcean[currentActiveImage]"><img :src="digitalOcean[currentActiveImage]" alt=""></a>
-                            <i class="fas fa-chevron-right white-txt"></i>
+                        <!-- swiper  -->
+                        <div class="swiper-container">
+                            <div class="swiper-wrapper">
+                                <!-- Slides -->
+                                <div class="swiper-slide">
+                                    <a href="img/digital-ocean/1.jpg"><img src="img/digital-ocean/1.jpg" alt=""></a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="img/digital-ocean/2.jpg"><img src="img/digital-ocean/2.jpg" alt=""></a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="img/digital-ocean/3.jpg"><img src="img/digital-ocean/3.jpg" alt=""></a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="img/digital-ocean/4.jpg"><img src="img/digital-ocean/4.jpg" alt=""></a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="img/digital-ocean/5.jpg"><img src="img/digital-ocean/5.jpg" alt=""></a>
+                                </div>
+                            </div>
+
+                            <div class="swiper-pagination"></div>
+
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-button-next"></div>
+            
                         </div>
-                        
                         
                     </div>
                     <!-- end Digital Ocean  -->
@@ -131,10 +157,23 @@
                             </div>
                         </div>
                         
-                        <div class="project-image-container">
-                            <i class="fas fa-chevron-left white-txt"></i>
-                            <a :href="boolflix[currentActiveImage]"><img :src="boolflix[currentActiveImage]" alt=""></a>
-                            <i class="fas fa-chevron-right white-txt"></i>
+                        <!-- swiper  -->
+                        <div class="swiper-container">
+                            <div class="swiper-wrapper">
+                                <!-- Slides -->
+                                <div class="swiper-slide">
+                                    <a href="img/Boolflix/boolflix-1.jpg"><img src="img/Boolflix/boolflix-1.jpg" alt=""></a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="img/Boolflix/boolflix-2.jpg"><img src="img/Boolflix/boolflix-2.jpg" alt=""></a>
+                                </div>
+                            </div>
+
+                            <div class="swiper-pagination"></div>
+
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-button-next"></div>
+            
                         </div>
 
                     </div>
@@ -158,11 +197,21 @@
                             </div>
                         </div>
                         
-                        <div class="project-image-container">
-                            <i class="fas fa-chevron-left white-txt"></i>
-                            <a :href="spotifyWeb[currentActiveImage]"><img :src="spotifyWeb[currentActiveImage]" alt=""></a>
-                            <i class="fas fa-chevron-right white-txt"></i>
+                         <!-- swiper  -->
+                       <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <!-- Slides -->
+                            <div class="swiper-slide">
+                                <a href="img/SpotifyWeb/spotify-1.jpg"><img src="img/SpotifyWeb/spotify-1.jpg" alt=""></a>
+                            </div>
                         </div>
+
+                        <div class="swiper-pagination"></div>
+
+                        <div style="display: none;" class="swiper-button-prev"></div>
+                        <div style="display: none;" class="swiper-button-next"></div>
+        
+                    </div>
 
                     </div>
                     <!-- end SpotifyWeb  -->
@@ -187,11 +236,27 @@
                             </div>
                         </div>
                         
-                        <div class="project-image-container">
-                            <i class="fas fa-chevron-left white-txt"></i>
-                            <a :href="boolzapp[currentActiveImage]"><img :src="boolzapp[currentActiveImage]" alt=""></a>
-                            <i class="fas fa-chevron-right white-txt"></i>
+                       <!-- swiper  -->
+                       <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <!-- Slides -->
+                            <div class="swiper-slide">
+                                <a href="img/Boolzapp/boolzapp-1.jpg"><img src="img/Boolzapp/boolzapp-1.jpg" alt=""></a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="img/Boolzapp/boolzapp-2.jpg"><img src="img/Boolzapp/boolzapp-2.jpg" alt=""></a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="img/Boolzapp/boolzapp-4.jpg"><img src="img/Boolzapp/boolzapp-4.jpg" alt=""></a>
+                            </div>
                         </div>
+
+                        <div class="swiper-pagination"></div>
+
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+        
+                    </div>
 
                     </div>
                     <!-- end Boolzapp  -->
@@ -216,11 +281,39 @@
                             </div>
                         </div>
                         
-                        <div class="project-image-container">
-                            <i class="fas fa-chevron-left white-txt"></i>
-                            <a :href="phlox[currentActiveImage]"><img :src="phlox[currentActiveImage]" alt=""></a>
-                            <i class="fas fa-chevron-right white-txt"></i>
+                       <!-- swiper  -->
+                       <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <!-- Slides -->
+                            <div class="swiper-slide">
+                                <a href="img/Phlox/phlox-1.jpg"><img src="img/Phlox/phlox-1.jpg" alt=""></a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="img/Phlox/phlox-2.jpg"><img src="img/Phlox/phlox-2.jpg" alt=""></a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="img/Phlox/phlox-3.jpg"><img src="img/Phlox/phlox-3.jpg" alt=""></a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="img/Phlox/phlox-4.jpg"><img src="img/Phlox/phlox-4.jpg" alt=""></a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="img/Phlox/phlox-5.jpg"><img src="img/Phlox/phlox-5.jpg" alt=""></a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="img/Phlox/phlox-6.jpg"><img src="img/Phlox/phlox-6.jpg" alt=""></a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="img/Phlox/phlox-7.jpg"><img src="img/Phlox/phlox-7.jpg" alt=""></a>
+                            </div>
                         </div>
+
+                        <div class="swiper-pagination"></div>
+
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+        
+                    </div>
 
                     </div>
                     <!-- end Phlox  -->
@@ -249,11 +342,31 @@
                             </div>
                         </div>
                         
-                        <div class="project-image-container">
-                            <i class="fas fa-chevron-left white-txt"></i>
-                            <a :href="deliveboo[currentActiveImage]"><img :src="deliveboo[currentActiveImage]" alt=""></a>
-                            <i class="fas fa-chevron-right white-txt"></i>
+                        <!-- swiper  -->
+                       <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <!-- Slides -->
+                            <div class="swiper-slide">
+                                <a href="img/Deliveboo/deliveboo-1.jpg"><img src="img/Deliveboo/deliveboo-1.jpg" alt=""></a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="img/Deliveboo/deliveboo-2.jpg"><img src="img/Deliveboo/deliveboo-2.jpg" alt=""></a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="img/Deliveboo/deliveboo-3.jpg"><img src="img/Deliveboo/deliveboo-3.jpg" alt=""></a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="img/Deliveboo/deliveboo-4.jpg"><img src="img/Deliveboo/deliveboo-4.jpg" alt=""></a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="img/Deliveboo/deliveboo-5.jpg"><img src="img/Deliveboo/deliveboo-5.jpg" alt=""></a>
+                            </div>
                         </div>
+
+                        <div class="swiper-pagination"></div>
+
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
 
                     </div>
                     <!-- end Deliveboo  -->
@@ -293,6 +406,12 @@
         <!-- END FOOTER  -->
     </div>
     
+    <!-- swiper  -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- app.js  -->
     <script src="dist/app.js"></script>
+    
 </body>
 </html>

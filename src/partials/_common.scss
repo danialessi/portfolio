@@ -36,7 +36,11 @@ body {
     border: 1px solid grey;
 }
 
-// .swiper-container {
-//     width: 600px;
-//     height: 300px;
-//   }
+.show {
+    opacity: 1;
+    transition: opacity 1000ms;
+}
+
+.hide {
+    opacity: 0;
+}

@@ -1,4 +1,11 @@
-// typeWriting function
+// FADE IN
+setTimeout(() => {
+  var prova = document.getElementById('fade-in');
+  prova.classList.add('show');
+  prova.classList.remove('hide');
+}, 3000);
+
+// TYPEWRITING FUNCTION
 let i = 0;
 let title = 'Hello World! My name is Daniele Alessi.';
 let speed = 60;
@@ -14,6 +21,7 @@ function type() {
 };
 
 type();
+
 
 // SWIPER 
 const swiper = new Swiper('.swiper-container', {

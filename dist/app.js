@@ -7,7 +7,13 @@
   \********************/
 /***/ (() => {
 
-// typeWriting function
+// FADE IN
+setTimeout(function () {
+  var prova = document.getElementById('fade-in');
+  prova.classList.add('show');
+  prova.classList.remove('hide');
+}, 3000); // TYPEWRITING FUNCTION
+
 var i = 0;
 var title = 'Hello World! My name is Daniele Alessi.';
 var speed = 60;

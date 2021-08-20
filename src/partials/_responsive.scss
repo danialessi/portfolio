@@ -1,0 +1,32 @@
+// tablet
+@include media-md {
+    #title {
+        .title-container {
+            #hello {
+                font-size: 80px;
+            }
+        }
+    }
+
+    .web-developer {
+        padding-bottom: 100px;
+    }
+}
+
+// laptop
+@include media-lg {
+    #title {
+        padding-top: 70px;
+
+        .title-container {
+
+            #hello {
+                font-size: 90px;
+            }
+        }
+    }
+
+    .web-developer {
+        padding-bottom: 100px;
+    }
+}

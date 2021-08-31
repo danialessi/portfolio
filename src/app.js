@@ -1,13 +1,13 @@
 // FADE IN
 setTimeout(() => {
-  var prova = document.getElementById('fade-in');
-  prova.classList.add('show');
-  prova.classList.remove('hide');
-}, 3000);
+  let fadein = document.getElementById('fade-in');
+  fadein.classList.add('show');
+  fadein.classList.remove('hide');
+}, 1500);
 
 // TYPEWRITING FUNCTION
 let i = 0;
-let title = 'Hello World! My name is Daniele Alessi.';
+let title = 'Daniele Alessi';
 let speed = 60;
 
 function type() {
@@ -22,26 +22,7 @@ function type() {
 
 type();
 
-
-// SWIPER 
-const swiper = new Swiper('.swiper-container', {
-  // Optional parameters
-  loop: true,
-
-  // If we need pagination
-  pagination: {
-    el: '.swiper-pagination',
-  },
-
-  // Navigation arrows
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
-
-  // And if we need scrollbar
-  scrollbar: {
-    el: '.swiper-scrollbar',
-  },
-});
-
+// BACKTOTOP
+$("#backtotop-container").click(function(){
+  document.documentElement.scrollTop = 0;
+})

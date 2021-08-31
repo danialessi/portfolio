@@ -9,13 +9,13 @@
 
 // FADE IN
 setTimeout(function () {
-  var prova = document.getElementById('fade-in');
-  prova.classList.add('show');
-  prova.classList.remove('hide');
-}, 3000); // TYPEWRITING FUNCTION
+  var fadein = document.getElementById('fade-in');
+  fadein.classList.add('show');
+  fadein.classList.remove('hide');
+}, 1500); // TYPEWRITING FUNCTION
 
 var i = 0;
-var title = 'Hello World! My name is Daniele Alessi.';
+var title = 'Daniele Alessi';
 var speed = 60;
 
 function type() {
@@ -29,24 +29,10 @@ function type() {
 }
 
 ;
-type(); // SWIPER 
+type(); // BACKTOTOP
 
-var swiper = new Swiper('.swiper-container', {
-  // Optional parameters
-  loop: true,
-  // If we need pagination
-  pagination: {
-    el: '.swiper-pagination'
-  },
-  // Navigation arrows
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev'
-  },
-  // And if we need scrollbar
-  scrollbar: {
-    el: '.swiper-scrollbar'
-  }
+$("#backtotop-container").click(function () {
+  document.documentElement.scrollTop = 0;
 });
 
 /***/ }),

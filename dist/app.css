@@ -43,17 +43,19 @@ body {
 }
 
 #title {
-  padding-top: 220px;
-}
-#title .title-container {
-  max-width: 95%;
+  padding-top: 100px;
 }
 #title .title-container #hello {
-  font-size: 115px;
+  font-size: 90px;
+  font-weight: bold;
+}
+
+#burger-menu {
+  display: none;
 }
 
 .web-developer {
-  padding-bottom: 140px;
+  padding-bottom: 65px;
 }
 
 ._navbar a {
@@ -66,8 +68,32 @@ body {
   color: #d40101;
 }
 
+#about {
+  padding-bottom: 50px;
+}
+#about .section-title-container {
+  margin: 80px 0 50px 0;
+}
+#about .about-me {
+  display: flex;
+  align-items: center;
+}
+#about .about-me .about-img-container {
+  width: 40%;
+}
+#about .about-me .about-img-container img {
+  width: 100%;
+  padding: 20px;
+}
+#about .about-me p {
+  width: 50%;
+}
+#about .about-me p a {
+  color: white;
+}
+
 #portfolio {
-  margin-top: 250px;
+  margin-top: 150px;
 }
 #portfolio .project-container {
   display: flex;
@@ -94,34 +120,28 @@ body {
 #portfolio .project-container .project-title-container .description {
   margin-top: 15px;
 }
-#portfolio .project-container .swiper-container {
+#portfolio .project-container .img-container {
   width: 50%;
 }
-#portfolio .project-container .swiper-container .swiper-wrapper .swiper-slide img {
+#portfolio .project-container .img-container img {
+  width: 100%;
+}
+#portfolio .project-container .main-carousel {
+  width: 50%;
+}
+#portfolio .project-container .main-carousel .carousel-cell {
+  width: 100%;
+}
+#portfolio .project-container .main-carousel .carousel-cell img {
   width: 100%;
 }
 #portfolio div:last-child {
   border-bottom: 0;
 }
 
-#about .section-title-container {
-  margin: 120px 0 50px 0;
+#contacts {
+  padding-bottom: 50px;
 }
-#about .about-me {
-  display: flex;
-  align-items: center;
-}
-#about .about-me .about-img-container {
-  width: 50%;
-}
-#about .about-me .about-img-container img {
-  width: 100%;
-  padding: 20px;
-}
-#about .about-me p {
-  width: 50%;
-}
-
 #contacts .section-title-container {
   margin: 120px 0 50px 0;
 }
@@ -134,24 +154,112 @@ body {
   font-size: 30px;
 }
 
-@media screen and (max-width: 991px) {
+#backtotop-container {
+  text-align: right;
+  position: relative;
+  bottom: 25px;
+  right: -230px;
+  font-size: 25px;
+  cursor: pointer;
+}
+#backtotop-container i:hover {
+  transform: scale(1.4);
+}
+
+@media screen and (max-width: 767px) {
+  #fade-in #about .about-me {
+    flex-direction: column;
+  }
+  #fade-in #about .about-me .about-img-container {
+    width: 100%;
+  }
+  #fade-in #about .about-me p {
+    width: 100%;
+  }
+  #fade-in #portfolio {
+    margin-top: 75px;
+  }
+  #fade-in #portfolio .project-container {
+    flex-direction: column;
+  }
+  #fade-in #portfolio .project-container .project-title-container {
+    width: 100%;
+    padding: 0;
+    text-align: center;
+  }
+  #fade-in #portfolio .project-container .img-container {
+    padding-top: 50px;
+    width: 100%;
+  }
+  #fade-in #portfolio .project-container .main-carousel {
+    width: 100%;
+    padding-top: 50px;
+  }
+  #fade-in #backtotop-container {
+    right: -50px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
   #title .title-container #hello {
     font-size: 80px;
   }
 
-  .web-developer {
-    padding-bottom: 100px;
+  #fade-in .web-developer {
+    padding-bottom: 40px;
+  }
+  #fade-in #about .about-me {
+    flex-direction: column;
+  }
+  #fade-in #about .about-me .about-img-container {
+    width: 100%;
+  }
+  #fade-in #about .about-me p {
+    width: 100%;
+  }
+  #fade-in #portfolio {
+    margin-top: 75px;
+  }
+  #fade-in #portfolio .project-container {
+    flex-direction: column;
+  }
+  #fade-in #portfolio .project-container .project-title-container {
+    width: 100%;
+    padding: 0;
+    text-align: center;
+  }
+  #fade-in #portfolio .project-container .img-container {
+    padding-top: 50px;
+    width: 100%;
+  }
+  #fade-in #portfolio .project-container .main-carousel {
+    width: 100%;
+    padding-top: 50px;
+  }
+  #fade-in #backtotop-container {
+    right: -90px;
   }
 }
 @media screen and (max-width: 1339px) {
   #title {
-    padding-top: 70px;
+    padding-top: 45px;
   }
   #title .title-container #hello {
-    font-size: 90px;
+    font-size: 60px;
   }
 
   .web-developer {
-    padding-bottom: 100px;
+    padding-bottom: 40px;
+  }
+
+  #about .section-title-container {
+    margin: 50px 0 50px 0;
+  }
+
+  #contacts .linkedin {
+    padding: 0 30px;
+  }
+
+  #backtotop-container {
+    right: -150px;
   }
 }

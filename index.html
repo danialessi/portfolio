@@ -5,10 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
-
-    <!-- swiper  -->
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     
     <!-- vue.js  -->
     <script src="https://cdn.jsdelivr.net/npm/vue"></script>
@@ -16,11 +12,11 @@
     <!-- font-awesome  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
 
-    <!-- bootstrap  -->
-    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
-
     <!-- CSS  -->
     <link rel="stylesheet" href="dist/app.css">
+
+    <!-- flickity  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.2.2/flickity.min.css" integrity="sha512-BiFZ6oflftBIwm6lYCQtQ5DIRQ6tm02svznor2GYQOfAlT3pnVJ10xCrU3XuXnUrWQ4EG8GKxntXnYEdKY0Ugg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <!-- FONT  -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -29,36 +25,65 @@
 </head>
 <body>
 
-    <div id="root">
-
         <div class="container">
                 
             <!-- TITLE  -->
-            <section id="title">
+            <div id="title">
                 <div class="title-container">
-                    <h1 id="hello" class="white-txt"></h1>
+                    <div id="hello" class="white-txt"></div>
                 </div>
-            </section>
+            </div>
             <!-- end TITLE  -->
+
+            <!-- BURGER-MENU  -->
+            <div id="burger-menu">
+                <i class="fas fa-bars white-txt"></i>
+            </div>
+            <!-- END BURGER-MENU  -->
         </div>
 
 
         <div id="fade-in" class="hide container">
-            <h2 class="web-developer red-txt">Jr. Full Stack Web Developer</h2>
+            
+            <h2 class="web-developer red-txt">Full Stack Web Developer</h2>
 
             <!-- navbar buttons  -->
             <div class="_navbar">
                 <a href="#portfolio">Portfolio</a>
-                <a href="#about">About</a>
-                <a href="#contacts">Contacts</a>
+                <a href="#contacts">Contatti</a>
             </div>
             <!-- end navbar buttons  -->
 
             <div class="border"></div>
 
+            <!-- ABOUT ME  -->
+            <div id="about">
+                
+                <div class="section-title-container">
+                    <h2 class="red-txt">CHI SONO</h2>
+                </div>
+
+                <div class="about-me">
+
+                    <div class="about-img-container">
+                        <img src="img/photo2.jpeg" alt="myself">
+                    </div>
+                    
+                    <p class="white-txt">Appassionato e forte consumatore di tecnologia in tutte le sue forme, sin da bambino. Questa passione ha sempre viaggiato su un binario parallelo a quello della musica e la batteria. <br><br>
+                        Durante il periodo lavorativo passato nella ristorazione ho conosciuto il mondo della programmazione che rappresenta per me un perfetto modo di sfruttare la passione tecnologica unita alla creatività della musica.
+                        Questo mi ha portato a curiosare su tutto ciò che gira intorno al coding e quindi ad investire sulla mia formazione. <br><br>
+                        Ho frequentato un corso di 700 ore di Full Stack Web Developer presso <a href="https://www.boolean.careers/">Boolean Careers</a>, in cui ho affrontato lo studio di diversi linguaggi e framework lato Front-End (HTML, CSS, Javascript, Vue.js, SASS)
+                        e Back-End (PHP, Laravel, MySql).
+                    </p>
+                </div>
+            </div>
+            <!-- END ABOUT ME  -->
+
+            <div class="border"></div>
+
             
             <!-- PORTFOLIO  -->
-            <section id="portfolio">
+            <div id="portfolio">
                 <div class="section-title-container">
                     <h2 class="red-txt">PORTFOLIO</h2>
                 </div>
@@ -79,36 +104,12 @@
                         </div>
                         
                         <div class="description">
-                            <p class="white-txt">Progetto realizzato utilizzando HTML, CSS e il framework Bootstrap 3 per rendere il tutto responsive.</p>
+                            <p class="white-txt">Progetto di riproduzione del sito web Digital Ocean realizzato utilizzando HTML, CSS e il framework Bootstrap 3 per rendere il tutto responsive.</p>
                         </div>
                     </div>
-                    
-                    <!-- swiper  -->
-                    <div class="swiper-container">
-                        <div class="swiper-wrapper">
-                            <!-- Slides -->
-                            <div class="swiper-slide">
-                                <a href="img/digital-ocean/1.jpg" target="_blank"><img src="img/digital-ocean/1.jpg" alt=""></a>
-                            </div>
-                            <div class="swiper-slide">
-                                <a href="img/digital-ocean/2.jpg" target="_blank"><img src="img/digital-ocean/2.jpg" alt=""></a>
-                            </div>
-                            <div class="swiper-slide">
-                                <a href="img/digital-ocean/3.jpg" target="_blank"><img src="img/digital-ocean/3.jpg" alt=""></a>
-                            </div>
-                            <div class="swiper-slide">
-                                <a href="img/digital-ocean/4.jpg" target="_blank"><img src="img/digital-ocean/4.jpg" alt=""></a>
-                            </div>
-                            <div class="swiper-slide">
-                                <a href="img/digital-ocean/5.jpg" target="_blank"><img src="img/digital-ocean/5.jpg" alt=""></a>
-                            </div>
-                        </div>
 
-                        <div class="swiper-pagination"></div>
-
-                        <div class="swiper-button-prev"></div>
-                        <div class="swiper-button-next"></div>
-        
+                    <div class="img-container">
+                        <a href="https://dani-portfolio-digitalocean-replica.netlify.app/" target="_blank"><img src="img/digital-ocean/1.jpg" alt="digitalocean-replica"></a>
                     </div>
                     
                 </div>
@@ -133,24 +134,9 @@
                             <p class="white-txt">Riproduzione della famosa web app di streaming, sfruttando le API messe a disposizione da "The MovieDB" richiamate tramite Axios su Vue.js.</p>
                         </div>
                     </div>
-                    
-                    <!-- swiper  -->
-                    <div class="swiper-container">
-                        <div class="swiper-wrapper">
-                            <!-- Slides -->
-                            <div class="swiper-slide">
-                                <a href="img/Boolflix/boolflix-1.jpg" target="_blank"><img src="img/Boolflix/boolflix-1.jpg" alt=""></a>
-                            </div>
-                            <div class="swiper-slide">
-                                <a href="img/Boolflix/boolflix-2.jpg" target="_blank"><img src="img/Boolflix/boolflix-2.jpg" alt=""></a>
-                            </div>
-                        </div>
 
-                        <div class="swiper-pagination"></div>
-
-                        <div class="swiper-button-prev"></div>
-                        <div class="swiper-button-next"></div>
-        
+                    <div class="img-container">
+                        <a href="https://dani-portfolio-boolflix.netlify.app/" target="_blank"><img src="img/Boolflix/boolflix-1.jpg" alt="boolflix"></a>
                     </div>
 
                 </div>
@@ -173,23 +159,11 @@
                             <p class="white-txt">Progetto ispirato alla versione web di Spotify realizzato con HTML, CSS e le proprietà Flexbox.</p>
                         </div>
                     </div>
-                    
-                        <!-- swiper  -->
-                    <div class="swiper-container">
-                    <div class="swiper-wrapper">
-                        <!-- Slides -->
-                        <div class="swiper-slide">
-                            <a href="img/SpotifyWeb/spotify-1.jpg" target="_blank"><img src="img/SpotifyWeb/spotify-1.jpg" alt=""></a>
-                        </div>
+
+                    <div class="img-container">
+                        <a href="https://dani-portfolio-spotify-web.netlify.app/" target="_blank"><img src="img/Spotify-web-replica.png" alt="spotify-replica-img"></a>
                     </div>
-
-                    <div class="swiper-pagination"></div>
-
-                    <div style="display: none;" class="swiper-button-prev"></div>
-                    <div style="display: none;" class="swiper-button-next"></div>
     
-                </div>
-
                 </div>
                 <!-- end SpotifyWeb  -->
 
@@ -212,29 +186,10 @@
                             <p class="white-txt">Progetto che riproduce la versione web della più popolare app di messaggistica. L'obiettivo era ricreare le funzionalità basilari e il layout dell'app originale, inserendo la possibilità di scrivere messaggi relativi a un contatto e ricevere una risposta automatica.</p>
                         </div>
                     </div>
-                    
-                    <!-- swiper  -->
-                    <div class="swiper-container">
-                    <div class="swiper-wrapper">
-                        <!-- Slides -->
-                        <div class="swiper-slide">
-                            <a href="img/Boolzapp/boolzapp-1.jpg" target="_blank"><img src="img/Boolzapp/boolzapp-1.jpg" alt=""></a>
-                        </div>
-                        <div class="swiper-slide">
-                            <a href="img/Boolzapp/boolzapp-2.jpg" target="_blank"><img src="img/Boolzapp/boolzapp-2.jpg" alt=""></a>
-                        </div>
-                        <div class="swiper-slide">
-                            <a href="img/Boolzapp/boolzapp-4.jpg" target="_blank"><img src="img/Boolzapp/boolzapp-4.jpg" alt=""></a>
-                        </div>
-                    </div>
 
-                    <div class="swiper-pagination"></div>
-
-                    <div class="swiper-button-prev"></div>
-                    <div class="swiper-button-next"></div>
-    
-                </div>
-
+                    <div class="img-container">
+                        <a href="https://dani-portfolio-boolzapp.netlify.app/" target="_blank"><img src="img/Boolzapp/boolzapp-1.jpg" alt="boolzapp"></a>
+                    </div>    
                 </div>
                 <!-- end Boolzapp  -->
 
@@ -257,41 +212,10 @@
                             <p class="white-txt">Riproduzione della homepage di un popolare tema di Wordpress. Questo progetto è stato realizzato sfruttando la potenza e la comodità del preprocessore SASS, unite a una struttura dati realizzata con Vue.js per popolare diversi elementi della pagina.</p>
                         </div>
                     </div>
-                    
-                    <!-- swiper  -->
-                    <div class="swiper-container">
-                    <div class="swiper-wrapper">
-                        <!-- Slides -->
-                        <div class="swiper-slide">
-                            <a href="img/Phlox/phlox-1.jpg" target="_blank"><img src="img/Phlox/phlox-1.jpg" alt=""></a>
-                        </div>
-                        <div class="swiper-slide">
-                            <a href="img/Phlox/phlox-2.jpg" target="_blank"><img src="img/Phlox/phlox-2.jpg" alt=""></a>
-                        </div>
-                        <div class="swiper-slide">
-                            <a href="img/Phlox/phlox-3.jpg" target="_blank"><img src="img/Phlox/phlox-3.jpg" alt=""></a>
-                        </div>
-                        <div class="swiper-slide">
-                            <a href="img/Phlox/phlox-4.jpg" target="_blank"><img src="img/Phlox/phlox-4.jpg" alt=""></a>
-                        </div>
-                        <div class="swiper-slide">
-                            <a href="img/Phlox/phlox-5.jpg" target="_blank"><img src="img/Phlox/phlox-5.jpg" alt=""></a>
-                        </div>
-                        <div class="swiper-slide">
-                            <a href="img/Phlox/phlox-6.jpg" target="_blank"><img src="img/Phlox/phlox-6.jpg" alt=""></a>
-                        </div>
-                        <div class="swiper-slide">
-                            <a href="img/Phlox/phlox-7.jpg" target="_blank"><img src="img/Phlox/phlox-7.jpg" alt=""></a>
-                        </div>
+
+                    <div class="img-container">
+                        <a href="https://dani-portfolio-phlox-theme.netlify.app/" target="_blank"><img src="img/Phlox/phlox-1.jpg" alt="phlox"></a>
                     </div>
-
-                    <div class="swiper-pagination"></div>
-
-                    <div class="swiper-button-prev"></div>
-                    <div class="swiper-button-next"></div>
-    
-                </div>
-
                 </div>
                 <!-- end Phlox  -->
 
@@ -320,91 +244,62 @@
                             </p>
                         </div>
                     </div>
-                    
-                    <!-- swiper  -->
-                    <div class="swiper-container">
-                    <div class="swiper-wrapper">
-                        <!-- Slides -->
-                        <div class="swiper-slide">
-                            <a href="img/Deliveboo/deliveboo-1.jpg" target="_blank"><img src="img/Deliveboo/deliveboo-1.jpg" alt=""></a>
-                        </div>
-                        <div class="swiper-slide">
-                            <a href="img/Deliveboo/deliveboo-2.jpg" target="_blank"><img src="img/Deliveboo/deliveboo-2.jpg" alt=""></a>
-                        </div>
-                        <div class="swiper-slide">
-                            <a href="img/Deliveboo/deliveboo-3.jpg" target="_blank"><img src="img/Deliveboo/deliveboo-3.jpg" alt=""></a>
-                        </div>
-                        <div class="swiper-slide">
-                            <a href="img/Deliveboo/deliveboo-4.jpg" target="_blank"><img src="img/Deliveboo/deliveboo-4.jpg" alt=""></a>
-                        </div>
-                        <div class="swiper-slide">
-                            <a href="img/Deliveboo/deliveboo-5.jpg" target="_blank"><img src="img/Deliveboo/deliveboo-5.jpg" alt=""></a>
-                        </div>
+
+                    <!-- carousel  -->
+                    <div class="main-carousel" data-flickity='{ "cellAlign": "left", "contain": true }'>
+                        <div class="carousel-cell"><a href="img/Deliveboo/deliveboo-1.jpg" target="_blank"><img src="img/Deliveboo/deliveboo-1.jpg" alt=""></a></div>
+                        <div class="carousel-cell"><a href="img/Deliveboo/deliveboo-2.jpg" target="_blank"><img src="img/Deliveboo/deliveboo-2.jpg" alt=""></a></div>
+                        <div class="carousel-cell"><a href="img/Deliveboo/deliveboo-3.jpg" target="_blank"><img src="img/Deliveboo/deliveboo-3.jpg" alt=""></a></div>
+                        <div class="carousel-cell"><a href="img/Deliveboo/deliveboo-4.jpg" target="_blank"><img src="img/Deliveboo/deliveboo-4.jpg" alt=""></a></div>
+                        <div class="carousel-cell"><a href="img/Deliveboo/deliveboo-5.jpg" target="_blank"><img src="img/Deliveboo/deliveboo-5.jpg" alt=""></a></div>
                     </div>
-
-                    <div class="swiper-pagination"></div>
-
-                    <div class="swiper-button-prev"></div>
-                    <div class="swiper-button-next"></div>
-
                 </div>
                 <!-- end Deliveboo  -->
 
-            </section>
+            </div>
             <!-- END PORTFOLIO  -->
 
             <div class="border"></div>
 
-            <!-- ABOUT ME  -->
-            <section id="about">
-                
-                <div class="section-title-container">
-                    <h2 class="red-txt">ABOUT ME</h2>
-                </div>
-
-                <div class="about-me">
-
-                    <div class="about-img-container">
-                        <img src="https://i1.wp.com/www.giacomocusano.com/wp-content/uploads/2016/07/coastal-wash-web.jpg?fit=1024%2C682" alt="">
-                    </div>
-                    
-                    <p class="white-txt">Appassionato e forte consumatore di tecnologia in tutte le sue forme, sin da bambino. Questa passione ha sempre viaggiato su un binario parallelo a quello della musica e la batteria. 
-                        Durante il periodo lavorativo passato nella ristorazione ho conosciuto il mondo della programmazione che rappresenta per me un modo di sfruttare la passione tecnologica unita alla creatività insita nella musica.
-                        Questo mi ha portato a investire sulla mia formazione e i prossimi obiettivi sono quelli di consolidare e accrescere le conoscenze acquisite.
-                    </p>
-                </div>
-            </section>
-            <!-- END ABOUT ME  -->
-
             <!-- CONTACTS  -->
             <div id="contacts">
                 <div class="section-title-container">
-                    <h2 class="red-txt">CONTACTS</h2>
+                    <h2 class="red-txt">CONTATTI</h2>
                 </div>
 
                 <div class="contacts-list">
-                    <div class="mail">
-                        <i class="fas fa-envelope white-txt"></i>
-                        <span class="white-txt"></span>
-                    </div>
+                    <a href="mailto:daniele.alessi@hotmail.it">
+                        <div class="mail">
+                            <i class="fas fa-envelope white-txt"></i>
+                            <span class="white-txt"></span>
+                        </div>
+                    </a>
 
                     <div class="linkedin">
                         <a href="https://www.linkedin.com/in/daniele-alessi-6189471b0/" target="_blank"><i class="fab fa-linkedin white-txt"></i></a>
+                    </div>
+
+                    <div class="github">
+                        <a href="https://github.com/danialessi" target="_blank"><i class="fab fa-github white-txt"></i></a>
                     </div>
                 </div>
                 
             </div>
                 
             <!-- END CONTACTS  -->
+
+            <div id="backtotop-container">
+                <i class="fas fa-arrow-circle-up white-txt"></i>
+            </div>
         </div>
 
-            
-    </div>
-    
-    <!-- swiper  -->
-    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
+    <!-- flickity  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.2.2/flickity.pkgd.min.js" integrity="sha512-cA8gcgtYJ+JYqUe+j2JXl6J3jbamcMQfPe0JOmQGDescd+zqXwwgneDzniOd3k8PcO7EtTW6jA7L4Bhx03SXoA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- jquery  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
     <!-- app.js  -->
     <script src="dist/app.js"></script>
     

@@ -1,3 +1,55 @@
+// smartphone
+@include media-sm {
+
+    #fade-in {
+    
+        #about {
+            .about-me {
+                flex-direction: column;
+    
+                .about-img-container {
+                    width: 100%;
+                }
+    
+                p {
+                    width: 100%;
+                }
+            }
+        }
+    
+        #portfolio {
+            margin-top: 75px;
+    
+            .project-container {
+                flex-direction: column;
+    
+                .project-title-container {
+                    width: 100%;
+                    padding: 0;
+                    text-align: center;
+                }
+    
+                .img-container {
+                    padding-top: 50px;
+                    width: 100%;
+                }
+
+                .main-carousel {
+                    width: 100%;
+                    padding-top: 50px;
+                }
+            }
+        }
+    
+        #backtotop-container {
+            right: -50px;
+        }
+
+    }
+
+    
+}
+
 // tablet
 @include media-md {
     #title {
@@ -8,25 +60,90 @@
         }
     }
 
-    .web-developer {
-        padding-bottom: 100px;
+    #fade-in {
+
+        .web-developer {
+            padding-bottom: 40px;
+        }
+
+        #about {
+            .about-me {
+                flex-direction: column;
+    
+                .about-img-container {
+                    width: 100%;
+                }
+    
+                p {
+                    width: 100%;
+                }
+            }
+        }
+
+        #portfolio {
+            margin-top: 75px;
+    
+            .project-container {
+                flex-direction: column;
+    
+                .project-title-container {
+                    width: 100%;
+                    padding: 0;
+                    text-align: center;
+                }
+    
+                .img-container {
+                    padding-top: 50px;
+                    width: 100%;
+                }
+
+                .main-carousel {
+                    width: 100%;
+                    padding-top: 50px;
+                }
+            }
+        }
+
+        #backtotop-container {
+            right: -90px;
+        }
     }
+
+    
 }
 
 // laptop
 @include media-lg {
     #title {
-        padding-top: 70px;
+        padding-top: 45px;
 
         .title-container {
 
             #hello {
-                font-size: 90px;
+                font-size: 60px;
             }
         }
     }
 
     .web-developer {
-        padding-bottom: 100px;
+        padding-bottom: 40px;
     }
+
+    #about {
+        .section-title-container {
+            margin: 50px 0 50px 0;
+        }
+    }
+
+    #contacts {
+        .linkedin {
+            padding: 0 30px;
+        }
+    }
+
+    #backtotop-container {
+        right: -150px;
+    }
+
+
 }

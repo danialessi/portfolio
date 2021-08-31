@@ -1,12 +1,11 @@
 // TITLE
 #title {
-    padding-top: 220px;
+    padding-top: 100px;
 
     .title-container {
-        max-width: 95%;
-    
         #hello {
-            font-size: 115px;
+            font-size: 90px;
+            font-weight: bold;
         }
 
             
@@ -14,10 +13,17 @@
 }
 // end TITLE
 
+// BURGER-MENU
+#burger-menu {
+    display: none;
+}
+// end BURGER-MENU
+
 .web-developer {
-    padding-bottom: 140px;
+    padding-bottom: 65px;
 }
 
+// NAVBAR 
 ._navbar {
     a {
         text-transform: uppercase;
@@ -30,10 +36,43 @@
         color: $red;
     }
 }
+// END NAVBAR
+
+// ABOUT ME
+#about {
+    padding-bottom: 50px;
+
+    .section-title-container {
+        margin: 80px 0 50px 0;
+    }
+
+    .about-me {
+        display: flex;
+        align-items: center;
+
+        .about-img-container {
+            width: 40%;
+
+            img {
+                width: 100%;
+                padding: 20px;
+            }
+        }
+
+        p {
+            width: 50%;
+
+            a {
+                color: white;
+            }
+        }
+    }
+}
+// END ABOUT ME
 
 // PORTFOLIO
 #portfolio {
-    margin-top: 250px;
+    margin-top: 150px;
 
     .project-container {
         display: flex;
@@ -69,14 +108,22 @@
             }
         }
 
-        .swiper-container {
+        .img-container {
             width: 50%;
 
-            .swiper-wrapper {
-                .swiper-slide {
-                    img {
-                        width: 100%;
-                    }
+            img {
+                width: 100%;
+            }
+        }
+
+        .main-carousel {
+            width: 50%;
+
+            .carousel-cell {
+                width: 100%;
+
+                img {
+                    width: 100%;
                 }
             }
         }
@@ -89,34 +136,12 @@
 }
 // end PORTFOLIO
 
-// ABOUT ME
-#about {
-    .section-title-container {
-        margin: 120px 0 50px 0;
-    }
 
-    .about-me {
-        display: flex;
-        align-items: center;
-
-        .about-img-container {
-            width: 50%;
-
-            img {
-                width: 100%;
-                padding: 20px;
-            }
-        }
-
-        p {
-            width: 50%;
-        }
-    }
-}
-// END ABOUT ME
 
 // CONTACTS
 #contacts {
+    padding-bottom: 50px;
+
     .section-title-container {
         margin: 120px 0 50px 0;
     }
@@ -131,3 +156,16 @@
     }
 }
 // END CONTACTS
+
+#backtotop-container {
+    text-align: right;
+    position: relative;
+    bottom: 25px;
+    right: -230px;
+    font-size: 25px;
+    cursor: pointer;
+
+    i:hover {
+        transform: scale(1.4);
+    }
+}

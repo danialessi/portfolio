@@ -167,6 +167,10 @@ body {
 }
 
 @media screen and (max-width: 767px) {
+  .container {
+    width: 90%;
+  }
+
   #fade-in #about .about-me {
     flex-direction: column;
   }

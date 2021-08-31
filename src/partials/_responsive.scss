@@ -1,6 +1,10 @@
 // smartphone
 @include media-sm {
 
+    .container {
+        width: 90%;
+    }
+
     #fade-in {
     
         #about {

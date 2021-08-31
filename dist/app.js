@@ -29,7 +29,11 @@ function type() {
 }
 
 ;
-type(); // BACKTOTOP
+type(); // scrollreveal
+
+ScrollReveal().reveal('.project-container', {
+  delay: 600
+}); // BACKTOTOP
 
 $("#backtotop-container").click(function () {
   document.documentElement.scrollTop = 0;

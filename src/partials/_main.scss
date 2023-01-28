@@ -26,11 +26,10 @@
 
             /* -------MENU------ */
             .menu {
-                padding: 20px 0;
-
-                a {
-                    padding: 0 20px;
-                }
+                display: flex;
+                align-items: center;
+                width: 30%;
+                justify-content: space-evenly;
             }
 
             #burger-menu {

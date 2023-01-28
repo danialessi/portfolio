@@ -40,14 +40,16 @@ a:hover {
 
 .cta {
     font-size: 15px;
-    color: white;
+    color: $green;
+    border: 1px solid $green;
     padding: 10px 25px;
-    background-color: $green;
+    //background-color: $green;
     transition: 0.5s;
 }
 .cta:hover {
-    transform: scale(1.1);
+   
     color: $white;
+    background-color: $green;
 }
 
 .section-title {

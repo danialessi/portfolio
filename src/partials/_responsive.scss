@@ -2,6 +2,10 @@
 @include media-sm {
     .app-wrapper {
 
+        p {
+            line-height: 20px;
+        }
+        
         header {
             .header-content {
                 .menu {
@@ -98,6 +102,10 @@
     .app-wrapper {
         .container {
             width: 90%;
+        }
+
+        p {
+            line-height: 20px;
         }
 
         header {

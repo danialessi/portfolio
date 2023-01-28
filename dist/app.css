@@ -22,6 +22,7 @@ body {
 p {
   color: white;
   margin: 10px 0;
+  line-height: 26px;
 }
 
 .z-index {
@@ -208,7 +209,7 @@ i {
 }
 .app-wrapper .projects .project-item .layover .layover-content .description {
   margin: 20px 0;
-  font-size: clamp(12px, 0.885vw, 17px);
+  font-size: clamp(15px, 0.885vw, 17px);
 }
 .app-wrapper .projects .project-item:hover .layover-content {
   opacity: 1;
@@ -249,6 +250,9 @@ i {
 }
 
 @media screen and (max-width: 767px) {
+  .app-wrapper p {
+    line-height: 20px;
+  }
   .app-wrapper header .header-content .menu {
     display: none;
   }
@@ -316,6 +320,9 @@ i {
 @media screen and (min-width: 768px) and (max-width: 991px) {
   .app-wrapper .container {
     width: 90%;
+  }
+  .app-wrapper p {
+    line-height: 20px;
   }
   .app-wrapper header .header-content .menu {
     display: none;

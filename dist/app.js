@@ -48,6 +48,14 @@ function type() {
 ;
 type();
 
+// scrollreveal
+ScrollReveal().reveal('#portfolio', {
+  delay: 400
+});
+ScrollReveal().reveal('#about-me', {
+  delay: 400
+});
+
 /***/ }),
 
 /***/ "./src/app.scss":

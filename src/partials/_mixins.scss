@@ -1,0 +1,21 @@
+// MEDIA QUERIES
+// smartphone 
+@mixin media-sm {
+    @media screen and (max-width: 767px) {
+        @content;
+    }
+}
+
+// tablet
+@mixin media-md {
+    @media screen and (min-width: 768px) and (max-width: 991px) {
+        @content;
+    }
+}
+
+// laptop
+@mixin media-lg {
+    @media screen and (max-width: 1339px) {
+        @content;
+    }
+}

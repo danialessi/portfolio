@@ -1,0 +1,61 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'IBM Plex Sans', sans-serif;
+    text-rendering: optimizeLegibility;
+    background-color: #0b192f;
+}
+
+.container {
+    margin: 0 auto;
+    width: 50%;
+}
+
+p {
+    color: $white;
+    margin: 10px 0;
+}
+
+.z-index {
+    position: relative;
+    z-index: -1;
+}
+
+a {
+    text-decoration: none;
+    color: $white;
+}
+
+a:hover {
+    color: $green;
+}
+
+.cta {
+    font-size: 15px;
+    color: white;
+    padding: 10px 25px;
+    background-color: $green;
+    transition: 0.5s;
+}
+.cta:hover {
+    transform: scale(1.1);
+    color: $white;
+}
+
+.section-title {
+    text-align: center;
+    color: $green;
+    padding: 60px 0;
+}
+
+i {
+    color: $white;
+}

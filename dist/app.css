@@ -297,6 +297,9 @@ i {
   .app-wrapper header .show {
     left: 0 !important;
   }
+  .app-wrapper .hero .hero-content .icon-container {
+    display: none;
+  }
   .app-wrapper .container {
     width: 90%;
   }
@@ -306,6 +309,9 @@ i {
   .app-wrapper .projects .project-item {
     width: 100%;
   }
+  .app-wrapper #about-me {
+    padding: 0;
+  }
   .app-wrapper #about-me .about-me-content {
     flex-direction: column;
   }
@@ -313,7 +319,7 @@ i {
     width: 100%;
   }
   .app-wrapper #about-me .about-me-content .photo {
-    width: 100%;
+    width: 80%;
     margin-top: 50px;
   }
 }

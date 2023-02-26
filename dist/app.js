@@ -23,6 +23,10 @@ $(document).ready(function () {
     $('#burger-menu-list-container').toggleClass("show");
     $('main').toggleClass("z-index");
   });
+  $('.burger-menu-list li').click(function () {
+    $('#burger-menu-list-container').toggleClass("show");
+    $('main').toggleClass("z-index");
+  });
 });
 
 // FADE IN

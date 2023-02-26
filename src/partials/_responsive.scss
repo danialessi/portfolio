@@ -65,6 +65,14 @@
             
         }
 
+        .hero {
+            .hero-content {
+                .icon-container {
+                    display: none;
+                }
+            }
+        }
+
         .container {
             width: 90%;
         }
@@ -79,6 +87,7 @@
        
 
         #about-me {
+            padding: 0;
             .about-me-content {
                 flex-direction: column;
 
@@ -87,7 +96,7 @@
                 }
 
                 .photo {
-                    width: 100%;
+                    width: 80%;
                     margin-top: 50px;
                 }
             }

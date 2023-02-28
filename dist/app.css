@@ -96,9 +96,11 @@ i {
   align-items: center;
   justify-content: center;
   border: 2px solid white;
+  border-right: none;
 }
 .app-wrapper header .header-content .logo h2 {
   color: white;
+  transform: translateX(11px);
 }
 .app-wrapper header .header-content .menu {
   display: flex;

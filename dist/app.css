@@ -55,7 +55,7 @@ a:hover {
 .section-title {
   text-align: center;
   color: #49a457;
-  padding: 60px 0;
+  padding: 100px 0 60px 0;
 }
 
 i {
@@ -236,7 +236,7 @@ i {
   width: 100%;
 }
 .app-wrapper #about-me {
-  padding: 200px 0;
+  padding-bottom: 200px;
 }
 .app-wrapper #about-me .about-me-content {
   display: flex;

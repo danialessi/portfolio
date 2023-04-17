@@ -50,3 +50,10 @@ type();
 // scrollreveal
 ScrollReveal().reveal('#portfolio', { delay: 400});
 ScrollReveal().reveal('#about-me', { delay: 400});
+
+var date = new Date();
+var year = date.getFullYear();
+
+$( document ).ready(function() {
+  $('#year').text(year);
+});

@@ -9,7 +9,7 @@
             align-items: center;
             position: absolute;
             z-index: 9;
-            width: 80%;
+            width: 70%;
             padding: 30px 0;
 
             /* -------LOGO------ */
@@ -43,18 +43,7 @@
 
             
 
-            .contacts-list-desktop {
-                display: flex;
-                font-size: 23px;
-
-                i:hover {
-                    color: $green;
-                }
-
-                .mail, .linkedin {
-                    margin-right: 15px;
-                }
-            }
+            
             /* -------MENU------ */
         }
         
@@ -242,4 +231,28 @@
     }
     
     /* END ABOUT ME SECTION */
+    .contacts-list-desktop {
+        display: flex;
+        font-size: 23px;
+
+        i:hover {
+            color: $green;
+        }
+
+        .mail, .linkedin {
+            margin-right: 15px;
+        }
+    }
+
+    /* FOOTER */
+    footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 30px 10%;
+
+        .copyright {
+            padding: 0 30px;
+        }
+    }
 }

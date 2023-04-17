@@ -71,6 +71,7 @@ i {
   /* END PROJECT */
   /* ABOUT ME SECTION */
   /* END ABOUT ME SECTION */
+  /* FOOTER */
 }
 .app-wrapper header {
   display: flex;
@@ -82,7 +83,7 @@ i {
   align-items: center;
   position: absolute;
   z-index: 9;
-  width: 80%;
+  width: 70%;
   padding: 30px 0;
   /* -------LOGO------ */
   /* -------END LOGO------ */
@@ -110,16 +111,6 @@ i {
 }
 .app-wrapper header .header-content #burger-menu {
   display: none;
-}
-.app-wrapper header .header-content .contacts-list-desktop {
-  display: flex;
-  font-size: 23px;
-}
-.app-wrapper header .header-content .contacts-list-desktop i:hover {
-  color: #49a457;
-}
-.app-wrapper header .header-content .contacts-list-desktop .mail, .app-wrapper header .header-content .contacts-list-desktop .linkedin {
-  margin-right: 15px;
 }
 .app-wrapper header #burger-menu-list-container {
   display: none;
@@ -252,6 +243,25 @@ i {
 .app-wrapper #about-me .about-me-content .photo img {
   max-width: 100%;
   border-radius: 55%;
+}
+.app-wrapper .contacts-list-desktop {
+  display: flex;
+  font-size: 23px;
+}
+.app-wrapper .contacts-list-desktop i:hover {
+  color: #49a457;
+}
+.app-wrapper .contacts-list-desktop .mail, .app-wrapper .contacts-list-desktop .linkedin {
+  margin-right: 15px;
+}
+.app-wrapper footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 10%;
+}
+.app-wrapper footer .copyright {
+  padding: 0 30px;
 }
 
 @media screen and (max-width: 767px) {

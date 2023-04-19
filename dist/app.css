@@ -367,6 +367,9 @@ i {
     list-style: none;
     padding: 20px;
   }
+  .app-wrapper .projects .project-item .mobile-accordion summary i {
+    font-size: 10px;
+  }
   .app-wrapper .projects .project-item .mobile-accordion summary::-webkit-details-marker {
     display: none;
   }

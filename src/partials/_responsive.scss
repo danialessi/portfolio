@@ -122,6 +122,10 @@
                         outline: none;
                         list-style: none;
                         padding: 20px;
+
+                        i {
+                            font-size: 10px;
+                        }
                     }
 
                     summary::-webkit-details-marker {

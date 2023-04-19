@@ -207,6 +207,9 @@ i {
   margin: 20px 0;
   font-size: clamp(15px, 0.885vw, 17px);
 }
+.app-wrapper .projects .project-item .mobile-accordion {
+  display: none;
+}
 .app-wrapper .projects .project-item:hover .layover-content {
   opacity: 1;
   cursor: pointer;
@@ -268,6 +271,9 @@ i {
   .app-wrapper p {
     line-height: 20px;
   }
+  .app-wrapper header .header-content {
+    width: 90%;
+  }
   .app-wrapper header .header-content .menu {
     display: none;
   }
@@ -326,6 +332,54 @@ i {
   }
   .app-wrapper .projects .project-item {
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .app-wrapper .projects .project-item .layover-content {
+    display: none !important;
+  }
+  .app-wrapper .projects .project-item .mobile-accordion {
+    display: block;
+    text-align: center;
+  }
+  .app-wrapper .projects .project-item .mobile-accordion[open] {
+    background-color: #141313ed;
+  }
+  .app-wrapper .projects .project-item .mobile-accordion[open] .accordion-content {
+    animation: sweep 0.5s ease-in-out;
+    padding: 0 5px 25px;
+  }
+  @keyframes sweep {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+    0% {
+      opacity: 0;
+    }
+  }
+  .app-wrapper .projects .project-item .mobile-accordion summary {
+    font-size: 15px;
+    outline: none;
+    list-style: none;
+    padding: 20px;
+  }
+  .app-wrapper .projects .project-item .mobile-accordion summary::-webkit-details-marker {
+    display: none;
+  }
+  .app-wrapper .projects .project-item .mobile-accordion .accordion-content .logos-container .logos-list li {
+    display: inline-block;
+  }
+  .app-wrapper .projects .project-item .mobile-accordion .accordion-content .description,
+.app-wrapper .projects .project-item .mobile-accordion .accordion-content .cta {
+    margin: 20px 0;
+  }
+  .app-wrapper .projects .project-item .mobile-accordion .accordion-content .cta {
+    font-size: 12px;
+    padding: 5px 20px;
   }
   .app-wrapper #about-me {
     padding: 0;
@@ -347,6 +401,9 @@ i {
   }
   .app-wrapper p {
     line-height: 20px;
+  }
+  .app-wrapper header .header-content {
+    width: 80%;
   }
   .app-wrapper header .header-content .menu {
     display: none;

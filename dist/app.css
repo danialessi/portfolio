@@ -22,7 +22,7 @@ body {
 p {
   color: white;
   margin: 10px 0;
-  line-height: 26px;
+  line-height: 23px;
 }
 
 .z-index {
@@ -212,7 +212,6 @@ i {
 }
 .app-wrapper .projects .project-item:hover .layover-content {
   opacity: 1;
-  cursor: pointer;
 }
 .app-wrapper #projects-wrapper {
   width: 60%;
@@ -372,6 +371,9 @@ i {
   }
   .app-wrapper .projects .project-item .mobile-accordion summary::-webkit-details-marker {
     display: none;
+  }
+  .app-wrapper .projects .project-item .mobile-accordion summary:hover {
+    cursor: pointer;
   }
   .app-wrapper .projects .project-item .mobile-accordion .accordion-content .logos-container .logos-list li {
     display: inline-block;

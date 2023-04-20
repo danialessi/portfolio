@@ -132,6 +132,10 @@
                         display: none;
                     }
 
+                    summary:hover {
+                        cursor: pointer;
+                    }
+
                     .accordion-content {
                         .logos-container {
                             .logos-list {

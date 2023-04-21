@@ -241,10 +241,20 @@ i {
 }
 .app-wrapper #about-me .about-me-content .photo {
   width: 25%;
+  position: relative;
+}
+.app-wrapper #about-me .about-me-content .photo .photo-frame {
+  width: 100%;
+  height: 100%;
+  border: 1px solid #49a457;
+  position: absolute;
+  left: 20px;
+  top: 20px;
 }
 .app-wrapper #about-me .about-me-content .photo img {
   max-width: 100%;
-  border-radius: 55%;
+  position: relative;
+  z-index: 9;
 }
 .app-wrapper .contacts-list-desktop {
   display: flex;
@@ -260,7 +270,7 @@ i {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 30px 10%;
+  padding: 45px 10%;
 }
 .app-wrapper footer .copyright {
   padding: 0 30px;

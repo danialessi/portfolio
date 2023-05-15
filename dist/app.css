@@ -254,7 +254,6 @@ i {
 .app-wrapper #about-me .about-me-content .photo img {
   max-width: 100%;
   position: relative;
-  z-index: 9;
 }
 .app-wrapper .contacts-list-desktop {
   display: flex;
